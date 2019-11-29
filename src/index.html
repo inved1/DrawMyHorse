@@ -6,6 +6,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.100.0.min.js"></script>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,6 +22,7 @@
     
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    <script src="aws.js" defer></script>
   </head>  
   <body>
       <div><canvas id="canvas" width="640" height="480" style="background-color: aqua;" ></canvas></div>
@@ -26,6 +30,7 @@
     <button id="flip-btn">Flip Camera</button>
     </div><br>
     <div><button id="image-btn">Take Photo</button></div><br>
+    <div><button id="send-btn">Send Photo</button></div><br>
     <div><video id="camera-stream" width="640" height="480" autoplay></video></div>
     <br>
     
