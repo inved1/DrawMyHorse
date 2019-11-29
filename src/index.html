@@ -6,32 +6,30 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<title>Draw your horse</title>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>
-      draw my horse 
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <script src="script.js"></script>
+    <title>DrawMyHorse</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
-    <style>
-      #vid-show, #vid-canvas, #vid-take {
-        display: block;
-        margin-bottom: 20px;
-      }
-      html, body {
-        padding: 0;
-        margin: 0;
-      }
-    </style>
-  </head>
-  <body>
-        <video id="camera-stream"></video>
-        <button disabled id="flip-btn">
-          Flip Camera
-        </button>
     
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+      <div><canvas id="canvas" width="640" height="480" style="background-color: aqua;" ></canvas></div>
+    <div>
+    <button id="flip-btn">Flip Camera</button>
+    </div><br>
+    <div><button id="image-btn">Take Photo</button></div><br>
+    <div><video id="camera-stream" width="640" height="480" autoplay></video></div>
+    <br>
+    
+    
+
   </body>
 </html>
