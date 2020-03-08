@@ -12,27 +12,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>DrawMyHorse</title>
+    <title>Fotoapp by Evax</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="styleevax.css">
     
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
     <script src="aws.js" defer></script>
+    <script src="canvas-to-blob.min.js"></script>
   </head>  
   <body>
-      <div><canvas id="canvas" width="640" height="480" style="background-color: aqua;" ></canvas></div>
     <div>
-    <button id="flip-btn">Flip Camera</button>
-    </div><br>
-    <div><button id="image-btn">Take Photo</button></div><br>
-    <div><button id="send-btn">Send Photo</button></div><br>
-    <div><video id="camera-stream" width="640" height="480" autoplay></video></div>
+      <canvas id="canvas" width="640" height="480" ></canvas>
+    </div>
+
     <br>
+    <div><button id="image-btn">Photo aufnehmen</button></div><br>
+    <div><button id="send-btn">Send Photo</button></div><br>
+
+
+    <div id="video_main">
+      
+      <div id="video_wrapper">
+        <video id="camera-stream" width="640" height="480" autoplay></video>
+      </div> 
+      <div id="video_wrapper"style="background-repeat: no-repeat; opacity: 1;">
+        
+      </div>
+
+    </div>
+    <br>
+
+    <div>
+        <button id="flip-btn">Flip Camera</button>
+      </div>
     
     
 

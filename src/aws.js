@@ -21,20 +21,36 @@ sendBtn.addEventListener('click', function(){
     let dataURL = canvas.toDataURL("image/png");
 
 
-    
-    var params = {
+    if (canvas.toBlob) {
+      canvas.toBlob(function(blob) {
+
+      
+
+      var params = {
         FunctionName: 'ingoigelstark-sendmail', // the lambda function we are going to invoke
         InvocationType: 'RequestResponse',
         LogType: 'Tail',
-        Payload: {img: dataURL}
+        Payload: JSON.stringify({image:dataURL})
       };
+
+      var returndata;
+      
+      lambda.invoke(params, function(err, data) {
+        console.log(data);
+          if (err) {
+            console.log('err: --- ' + err);
+          } else {
+            returndata = JSON.parse(data);
+            var log = JSON.stringify(returndata);
+            console.log('ok: --- ' +log);
+          }
+        })
+
+      }, 'image/jpeg')
+    }
+
+
     
-    lambda.invoke(params, function(err, data) {
-        if (err) {
-          console.log('err: --- ' + err);
-        } else {
-          console.log(data.Payload);
-        }
-      })
+    
 
   });
