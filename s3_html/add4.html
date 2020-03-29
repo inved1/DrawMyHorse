@@ -1,0 +1,82 @@
+
+        
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.100.0.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fotoapp by Evax</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="styleevax2.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <script src="aws.js" defer></script>
+    <script src="canvas-to-blob.min.js"></script>
+
+    <!-- popup -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js" type="text/javascript"></script>
+    <link href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css"
+    rel="stylesheet" type="text/css" />
+  </head>  
+  <body>
+    <a href="https://draw-my-horse.s3.amazonaws.com/index.html">
+      <img src="img/logo3.png" alt="Evax Biotech" id="logo" data-actual-width="400" data-actual-height="100">
+    </a>
+    <h2 style="text-align: center;">Evax fotoapp for independent health history observation.</h2>
+   
+    <div style="text-indent:10px;"><button id="image-btn-1" >Hinterbeine oben Seite 2 aufnehmen</button></div>
+    <br>
+    <div style="text-indent:10px;"><input id="send-btn" type="button" data-nextpage="index.html" value="Senden & zurück" /></div>
+    <br>
+
+    <table class="t-table">
+      <tr style="line-height: 480px; height: 480px; width: auto;">
+        <td>
+          <div id="video_main">
+            <div id="video_wrapper_horse3_small">
+              <video id="camera-stream" width="640" height="480" autoplay></video>
+            </div> 
+            <div id="video_wrapper_horse3_small_flipX"style="background-repeat: no-repeat; opacity: 1;"></div>
+          </div>
+        </td>
+        <td>
+          <div id="canvas_result_1">
+            <canvas id="canvas_1" width="640" height="480" ></canvas>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    
+
+    <div>
+      
+    </div>
+    <br>
+
+    <div>
+        <button id="flip-btn">Flip Camera</button>
+    </div>
+    <div id="dialog" style="display: none">
+      Bitte warten.. <br>
+      Verarbeite Daten...
+    </div>
+    
+
+  </body>
+</html>

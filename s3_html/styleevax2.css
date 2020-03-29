@@ -1,0 +1,443 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+#canvas_1{
+  width: 640px;
+  height: 480px;
+}
+  
+#camera-stream {
+  width: 640px;
+  height: 480px;
+}
+  
+#flip-btn {
+  bottom: 10px;
+  right: 10px;
+  padding: 10px 20px;
+}
+
+#image-btn-1 {
+  bottom: 10px;
+  right: 10px;
+  padding: 10px 20px;
+}
+
+#send-btn {
+  bottom: 10px;
+  right: 10px;
+  padding: 10px 20px;
+}
+
+#video_main{
+  position: sticky;
+  top: 10px;
+  width: 640px;
+  height: 480px;
+}
+
+#video_wrapper_parent{
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+}
+
+#video_wrapper_belly{
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Belly_bw.png');
+}
+
+#video_wrapper_ears{
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Ears_bw.png');
+}
+
+#video_wrapper_head {
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Head_bw.png');
+}
+
+#video_wrapper_horse1{
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Horse1_bw.png');
+}
+
+#video_wrapper_horse2{
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Horse2_bw.png');
+}
+
+#video_wrapper_horse2_small{
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Horse2_bw_small.png');
+}
+
+#video_wrapper_horse3{
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Horse3_bw.png');
+}
+
+#video_wrapper_horse3_small{
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Horse3_bw_small.png');
+}
+
+#video_wrapper_horse4{
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Horse4_bw.png');
+}
+
+#video_wrapper_horse4_small{
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Horse4_bw_small.png');
+}
+
+#video_wrapper_horse5{
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Horse5_bw.png');
+}
+
+#video_wrapper_horse5_small{
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Horse5_bw_small.png');
+}
+
+#video_wrapper_ManeTop{
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Mane_Top_bw.png');
+}
+
+#video_wrapper_tail{
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Tail_bw.png');
+}
+
+
+
+#video_wrapper_belly_flipX{
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scaleX(-1);
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Belly_bw.png');
+}
+
+#video_wrapper_ears_flipX{
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scaleX(-1);
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Ears_bw.png');
+}
+
+#video_wrapper_head_flipX {
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scaleX(-1);
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Head_bw.png');
+}
+
+#video_wrapper_horse1_flipX{
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scaleX(-1);
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Horse1_bw.png');
+}
+
+#video_wrapper_horse2_flipX{
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scaleX(-1);
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Horse2_bw.png');
+}
+
+#video_wrapper_horse2_small_flipX{
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scaleX(-1);
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Horse2_bw_small.png');
+}
+
+#video_wrapper_horse3_flipX{
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scaleX(-1);
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Horse3_bw.png');
+}
+
+#video_wrapper_horse3_small_flipX{
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scaleX(-1);
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Horse3_bw_small.png');
+}
+
+#video_wrapper_horse4_flipX{
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scaleX(-1);
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Horse4_bw.png');
+}
+
+#video_wrapper_horse4_small_flipX{
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scaleX(-1);
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Horse4_bw_small.png');
+}
+
+#video_wrapper_horse5_flipX{
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scaleX(-1);
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Horse5_bw.png');
+}
+
+#video_wrapper_horse5_flipX_small{
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scaleX(-1);
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Horse5_bw_small.png');
+}
+
+#video_wrapper_ManeTop_flipX{
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scaleX(-1);
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Mane_Top_bw.png');
+}
+
+#video_wrapper_tail_flipX{
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scaleX(-1);
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-image: url('img/Tail_bw.png');
+}
+
+
+
+#col-container {
+  display: flex; 
+  width: 100%;
+  border: tomato;
+
+}
+@media only screen and (max-width: 600px) {
+  #col {
+    flex: 1; 
+    padding: 0px;
+   
+    height: 640px;
+  }
+}
+
+
+
+
+.t-table {
+  border: 0px solid black;
+  height: 480px;
+  border-collapse: collapse;
+}
+.t-table td {
+  border: 0px solid black;
+  width: 640px;
+  height: 480px;
+}
+.t-table td:empty {
+  border-left: 0;
+  border-right: 0;
+}

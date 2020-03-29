@@ -1,0 +1,72 @@
+/* CSS files add styling rules to your content */
+
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+  }
+  
+  #camera-stream {
+    width: auto;
+    height: 100%;
+  }
+  
+  #flip-btn {
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    
+  }
+
+#video_main{
+  position: sticky;
+  top: 10px;
+  width:640px;
+  height: 480px;
+}
+#video_wrapper_1{
+  background-image: url('img/Ears_bw.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 300000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:640px;
+  height: 480px;
+}
+
+
+
+#col-container {
+  display: flex; 
+  width: 100%;
+  border: tomato;
+
+}
+@media only screen and (max-width: 600px) {
+  #col {
+    flex: 1; 
+    padding: 0px;
+   
+    height: 640px;
+  }
+}
+
+
+
+
+.t-table {
+  border: 0px solid black;
+  height: 400px;
+  border-collapse: collapse;
+}
+.t-table td {
+  border: 0px solid black;
+  width: 640px;
+}
+.t-table td:empty {
+  border-left: 0;
+  border-right: 0;
+}

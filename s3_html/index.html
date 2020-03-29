@@ -1,0 +1,92 @@
+
+        
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.100.0.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fotoapp by Evax</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="styleevax2.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="buttons.js" defer></script>
+  </head>  
+  <body>
+    <a href="https://draw-my-horse.s3.amazonaws.com/index.html">
+      <img src="img/logo3.png" alt="Evax Biotech" id="logo" data-actual-width="400" data-actual-height="100">
+    </a>
+    <h2 style="text-align: center;">Evax fotoapp for independent health history observation.</h2>
+
+    <ul>
+      <li>
+        <p style="text-align: left;">Dokumentieren Sie ihr Pferd nach Hilfe & Vorgabe
+        </p>
+      </li>
+      <li>
+        <p style="text-align: left;">Senden Sie zusätzliche Fotos bei Bedarf
+        </p>
+      </li>
+    </ul>
+
+    <br>
+    <br>
+    <h1 style="text-indent:10px;">Obligatorische Fotos</h1>
+    <br>
+    <div style="text-indent:10px;"><input id="mandatory-btn" type="button" data-nextpage="step1.html" value="Obligatorische Fotos starten 1/9" data-name="Voll Seite 1"  style="padding: 10px 20px;" /></div>
+    <br>
+    <h1 style="text-indent:10px;">Zusätzliche Fotos</h1>
+    <br>
+    <div style="text-indent:10px;"><input id="add1-btn" type="button" data-nextpage="add1.html" value="Hinterbeine unten Seite 1" data-name="Hinterbeine unten Seite 1"  style="padding: 10px 20px;"/></div>
+    <br>
+    <div style="text-indent:10px;"><input id="add2-btn" type="button" data-nextpage="add2.html" value="Hinterbeine unten Seite 2"  data-name="Hinterbeine unten Seite 2" style="padding: 10px 20px;" /></div>
+    <br>
+    <div style="text-indent:10px;"><input id="add3-btn" type="button" data-nextpage="add3.html" value="Hinterbeine oben Seite 1"  data-name="Hinterbeine oben Seite 1" style="padding: 10px 20px;"/></div>
+    <br>
+    <div style="text-indent:10px;"><input id="add4-btn" type="button" data-nextpage="add4.html" value="Hinterbeine oben Seite 2" data-name="Hinterbeine oben Seite 2" style="padding: 10px 20px;"/></div>
+    <br>
+    <div style="text-indent:10px;"><input id="add5-btn" type="button" data-nextpage="add5.html" value="Vorderbeine unten Seite 1" data-name="Vorderbeine unten Seite 1" style="padding: 10px 20px;"/></div>
+    <br>
+    <div style="text-indent:10px;"><input id="add6-btn" type="button" data-nextpage="add6.html" value="Vorderbeine unten Seite 2" data-name="Vorderbeine unten Seite 2"  style="padding: 10px 20px;"/></div>
+    <br>
+    <div style="text-indent:10px;"><input id="add7-btn" type="button" data-nextpage="add7.html" value="Ohren Seite 1"  data-name="Ohren Seite 1" style="padding: 10px 20px;"/></div>
+    <br>
+    <div style="text-indent:10px;"><input id="add8-btn" type="button" data-nextpage="add8.html" value="Ohren Seite 2"  data-name="Ohren Seite 2" style="padding: 10px 20px;"/></div>
+
+
+    <!--
+    <table class="t-table">
+      <tr style="line-height: 480px; height: 480px; width: auto;">
+        <td>
+          <div id="video_main">
+            <div id="video_wrapper_belly">
+              <video id="camera-stream" width="640" height="480" autoplay  ></video>
+            </div> 
+            <div id="video_wrapper_horse2_flipX" width="640" height="480" style="background-repeat: no-repeat; opacity: 1; background-size: contain;  "  ></div>
+          </div>
+        </td>
+        <td >
+          <div id="canvas_result_1" width="640" height="480">
+            <canvas id="canvas_1" width="640" height="480"  ></canvas>
+          </div>
+        </td>
+      </tr>
+    </table>
+    -->
+
+
+  </body>
+</html>
